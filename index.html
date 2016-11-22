@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>draw</title>
+
+    <link rel='stylesheet' href='main.css' />
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
+  </head>
+  <body>
+    <button id="draw"><a href="#modal">DRAW</a></button>
+
+    <div id="gallery">
+    <h1>gallery</h1>
+    </div>
+
+    <div id="modal" class="popupDraw">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+      <div class="colours">
+        <div id="black" onclick="colour(this)"></div>
+        <div id="green" onclick="colour(this)"></div>
+        <div id="violet" onclick="colour(this)"></div>
+        <div id="orange" onclick="colour(this)"></div>
+        <div id="blue" onclick="colour(this)"></div>
+        <div id="grey" onclick="colour(this)"></div>
+        <div id="red" onclick="colour(this)"></div>
+        <div id="yellow" onclick="colour(this)"></div>
+        <div id="indigo" onclick="colour(this)"></div>
+        <div id="white" onclick="colour(this)"></div>
+      </div>
+
+      <div class="canvas-con">
+        <canvas id="paper" height="300" width="400"></canvas>
+      </div>
+
+      <div class="buttons">
+        <input type="submit" value="Add to Gallery" id="save">
+        <input type="submit" value="Clear" id="clear onclick="clearCanvas(canvas,ctx)">
+      </div>
+  </body>
+
+</html>
+
+<script type="text/javascript" src="bundle.js"></script>
