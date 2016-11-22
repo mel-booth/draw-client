@@ -3,6 +3,7 @@ canvas {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
 .colours {
   padding: 20px;
   display: flex;
@@ -16,7 +17,6 @@ canvas {
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
-
 }
 
 .buttons {
@@ -24,7 +24,6 @@ canvas {
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
-  font-family: 'Annie Use Your Telescope', cursive;
 }
 
 .draw {
@@ -33,10 +32,15 @@ canvas {
 
 a {
   text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  color: #89a9ee;
 }
 
 h1 {
   text-align: center;
+  font-size: 5em;
 }
 
 #draw {
@@ -55,10 +59,12 @@ h1 {
   transition: opacity 400ms ease-in;
   pointer-events: none;
 }
+
 .popupDraw:target {
   opacity:1;
   pointer-events: auto;
 }
+
 .popupDraw > div {
   width: 400px;
   position: relative;
@@ -67,6 +73,7 @@ h1 {
   border-radius: 10px;
   background: #ffffff;
 }
+
 .close {
   background: #000000;
   color: #FFFFFF;
@@ -80,6 +87,7 @@ h1 {
   font-weight: bold;
   border-radius: 12px;
 }
+
 .close:hover {
   background: #a6a6ed;
 }
