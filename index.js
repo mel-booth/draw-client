@@ -3,8 +3,6 @@
 canvas = document.getElementById('paper')
 ctx = canvas.getContext('2d')
 
-
-
 var mouseX, mouseY, mouseDown = 0
 var x = 'black'
 var y = 2
