@@ -32,28 +32,28 @@ var x = 'black'
 var y = 2
 
 var draw = function() {
-    ctx.lineTo(mouseX, mouseY)
-    ctx.strokeStyle = x
-    ctx.lineWidth = penSlider.value
-    ctx.stroke()
+  ctx.lineTo(mouseX, mouseY)
+  ctx.strokeStyle = x
+  ctx.lineWidth = penSlider.value
+  ctx.stroke()
 }
 
 canvas.addEventListener('mousemove', function(e) {
   getMousePos(e)
-  if (mouseDown ==1){
+  if (mouseDown == 1){
     draw(ctx, mouseX, mouseY, penslider.value)
   }
 })
 
 canvas.addEventListener('mousedown', function(evt) {
-    ctx.beginPath()
-    ctx.moveTo(mouseX, mouseY)
+  ctx.beginPath()
+  ctx.moveTo(mouseX, mouseY)
 
-    canvas.addEventListener('mousemove', draw, false)
+  canvas.addEventListener('mousemove', draw, false)
 }, false)
 
 canvas.addEventListener('mouseup', function() {
-    canvas.removeEventListener('mousemove', draw, false)
+  canvas.removeEventListener('mousemove', draw, false)
 }, false)
 
 document.getElementById('clear').onclick=function(e){
@@ -87,8 +87,8 @@ document.getElementById('save').onclick=function(e){
   ajax.postImage(url, function(err, res){
     console.log(res.body);
     var imageEl = document.createElement('img')
-       imageEl.src = res.body.images.url
-       document.body.appendChild(imageEl)
+      imageEl.src = res.body.images.url
+      document.body.appendChild(imageEl)
   })
 }
 
