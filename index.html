@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>draw</title>
+
+    <link rel='stylesheet' href='main.css' />
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
+  </head>
+  <body>
+
+    <h1><a href="#modal" id="draw">DRAW</a></h1>
+
+    <div id="gallery"></div>
+
+    <div id="modal" class="popupDraw">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+    <div class="penSlider">
+      <input type="range" name="brushsize" min="0" max="15" id="penSlider" step="0.5" value="1">
+    </div>
+
+    <div class="canvas-con">
+      <canvas id="paper" height="300" width="400"></canvas>
+    </div>
+
+    <div class="buttons">
+      <input type="submit" value="Add to Gallery" id="save">
+      <input type="submit" value="Clear" id="clear">
+    </div>
+  </body>
+
+</html>
+
+<script type="text/javascript" src="bundle.js"></script>
