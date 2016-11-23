@@ -4,14 +4,6 @@ canvas {
   margin-bottom: 20px;
 }
 
-.colours {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-
 .canvas-con {
   display: flex;
   flex-direction: column;
@@ -90,84 +82,4 @@ h1 {
 
 .close:hover {
   background: #a6a6ed;
-}
-
-#black {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid;
-  background: #000000
-}
-
-#green {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid #00cc00;
-  background: #00cc00;
-}
-
-#violet {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid #ee82ee;
-  background: #ee82ee;
-}
-
-#orange {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid #ffa500;
-  background: #ffa500;
-}
-
-#blue {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid #0000ff;
-  background: #0000ff;
-}
-
-#grey {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid #808080;
-  background: #808080;
-}
-
-#red {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid #ff0000;
-  background: #ff0000;
-}
-
-#yellow {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid #ffff00;
-  background: #ffff00;
-}
-
-#indigo {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid #4b0082;
-  background: #4b0082;
-}
-
-#white {
-  display: inline-block;
-  width: 29px;
-  height: 20px;
-  border: 0.5px solid;
-  background: #ffffff;
 }
