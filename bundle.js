@@ -8,7 +8,7 @@ module.exports = {
 
 function getImages(callback){
   request
-    .get('http://localhost:3000/api/v1/images')
+    .get('https://mel-draw.herokuapp.com/api/v1/images')
     .end(function(err, res){
       callback(null, res)
     })
@@ -16,7 +16,7 @@ function getImages(callback){
 
 function postImage(url, callback){
   request
-    .post('http://localhost:3000/api/v1/images')
+    .post('https://mel-draw.herokuapp.com/api/v1/images')
     .send({url})
     .end(callback)
 }
