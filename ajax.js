@@ -9,7 +9,6 @@ function getImages(callback){
   request
     .get('http://localhost:3000/api/v1/images')
     .end(function(err, res){
-      console.log(res.body.images)
       callback(null, res)
     })
 }
